@@ -1,0 +1,201 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a4ad3c36-2846-47cb-acce-765c3eb191c2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>musegen\note-generator.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Chapter_3</Name>
+    <RootNamespace>Chapter_3</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Chapter_3_1.py" />
+    <Compile Include="Chapter_3_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chapter_3_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classical-Piano-Composer\lstm.py" />
+    <Compile Include="Classical-Piano-Composer\predict.py" />
+    <Compile Include="data_loader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Chapter_3_wgan.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="musegen\config.py" />
+    <Compile Include="musegen\helper.py" />
+    <Compile Include="musegen\musegen.py" />
+    <Compile Include="musegen\note-generator.py" />
+    <Compile Include="musegen\pitch-embedding.py" />
+    <Compile Include="musegen\pitch-generator.py" />
+    <Compile Include="musegen\stats.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classical-Piano-Composer\" />
+    <Folder Include="Classical-Piano-Composer\data\" />
+    <Folder Include="Classical-Piano-Composer\midi_songs\" />
+    <Folder Include="Classical-Piano-Composer\__pycache__\" />
+    <Folder Include="images\" />
+    <Folder Include="input\" />
+    <Folder Include="musegen\" />
+    <Folder Include="musegen\models\" />
+    <Folder Include="musegen\models\note-generator\" />
+    <Folder Include="musegen\models\pitch-embedding\" />
+    <Folder Include="musegen\models\pitch-generator\" />
+    <Folder Include="musegen\samples\" />
+    <Folder Include="musegen\samples\note-generator\" />
+    <Folder Include="musegen\samples\pitch-generator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classical-Piano-Composer\.gitattributes" />
+    <Content Include="Classical-Piano-Composer\data\notes" />
+    <Content Include="Classical-Piano-Composer\midi_songs\0fithos.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\8.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ahead_on_our_way_piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\AT.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\balamb.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\bcm.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\BlueStone_LastDungeon.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\braska.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\caitsith.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Cids.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\cosmo.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\costadsol.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\dayafter.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\decisive.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\dontbeafraid.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\DOS.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\electric_de_chocobo.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Eternal_Harvest.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\EyesOnMePiano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff11_awakening_piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff1battp.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FF3_Battle_%28Piano%29.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FF3_Third_Phase_Final_%28Piano%29.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff4-airship.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Ff4-BattleLust.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff4-fight1.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff4-town.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FF4.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff4pclov.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff4_piano_collections-main_theme.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FF6epitaph_piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff6shap.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Ff7-Cinco.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Ff7-Jenova_Absolute.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff7-mainmidi.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Ff7-One_Winged.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff7themep.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ff8-lfp.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FF8_Shuffle_or_boogie_pc.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FFIII_Edgar_And_Sabin_Piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FFIXQuMarshP.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FFIX_Piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FFVII_BATTLE.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\FFX_-_Ending_Theme_%28Piano_Version%29_-_by_Angel_FF.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Fiend_Battle_%28Piano%29.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Fierce_Battle_%28Piano%29.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\figaro.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Finalfantasy5gilgameshp.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Finalfantasy6fanfarecomplete.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Final_Fantasy_7_-_Judgement_Day_Piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Final_Fantasy_Matouyas_Cave_Piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\fortresscondor.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Fyw_piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\gerudo.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\goldsaucer.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Gold_Silver_Rival_Battle.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\great_war.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\HighwindTakestotheSkies.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\In_Zanarkand.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\JENOVA.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Kingdom_Hearts_Dearly_Beloved.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Kingdom_Hearts_Traverse_Town.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Life_Stream.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\lurk_in_dark.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\mining.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Oppressed.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\OTD5YA.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\path_of_repentance.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\pkelite4.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Rachel_Piano_tempofix.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\redwings.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\relmstheme-piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\roseofmay-piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\rufus.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Rydia_pc.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\sandy.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\sera_.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\sobf.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Still_Alive-1.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Suteki_Da_Ne_%28Piano_Version%29.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\thenightmarebegins.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\thoughts.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\tifap.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\tpirtsd-piano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\traitor.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ultimafro.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ultros.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\VincentPiano.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\ViviinAlexandria.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\waltz_de_choco.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\Zelda_Overworld.mid" />
+    <Content Include="Classical-Piano-Composer\midi_songs\z_aeristhemepiano.mid" />
+    <Content Include="Classical-Piano-Composer\new_weights.hdf5" />
+    <Content Include="Classical-Piano-Composer\README.md" />
+    <Content Include="Classical-Piano-Composer\weights.hdf5" />
+    <Content Include="Classical-Piano-Composer\__pycache__\lstm.cpython-36.pyc" />
+    <Content Include="musegen\.gitignore" />
+    <Content Include="musegen\LICENSE" />
+    <Content Include="musegen\models\note-generator\arch.txt" />
+    <Content Include="musegen\models\note-generator\model.json" />
+    <Content Include="musegen\models\note-generator\weights-43.hdf5" />
+    <Content Include="musegen\models\pitch-embedding\decoder-model.json" />
+    <Content Include="musegen\models\pitch-embedding\encoder-model.json" />
+    <Content Include="musegen\models\pitch-embedding\full-model.json" />
+    <Content Include="musegen\models\pitch-generator\arch.txt" />
+    <Content Include="musegen\models\pitch-generator\model.json" />
+    <Content Include="musegen\models\pitch-generator\weights-155.h5" />
+    <Content Include="musegen\note-gen-model.png" />
+    <Content Include="musegen\README.md" />
+    <Content Include="musegen\samples\note-generator\sample-0.mid" />
+    <Content Include="musegen\samples\note-generator\sample-1.mid" />
+    <Content Include="musegen\samples\note-generator\sample-2.mid" />
+    <Content Include="musegen\samples\note-generator\sample-3.mid" />
+    <Content Include="musegen\samples\note-generator\sample-4.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-0.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-1.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-2.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-3.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-4.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-5.mid" />
+    <Content Include="musegen\samples\pitch-generator\sample-6.mid" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
